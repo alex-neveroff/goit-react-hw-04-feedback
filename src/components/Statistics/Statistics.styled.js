@@ -16,7 +16,7 @@ export const FeedbackName = styled.p`
 `;
 
 export const Quantity = styled.p`
-  width: 60px;
+  width: 70px;
   font-size: 24px;
   font-weight: bold;
   text-align: center;
