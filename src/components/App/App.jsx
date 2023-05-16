@@ -5,7 +5,7 @@ import FeedbackOptions from 'components/FeedbackOptions';
 import Notification from 'components/Notification';
 import { Container } from './App.styled';
 
-export default function App() {
+const App = () => {
   const [good, setGood] = useState(0);
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
@@ -56,4 +56,6 @@ export default function App() {
       </Section>
     </Container>
   );
-}
+};
+
+export default App;
