@@ -17,19 +17,9 @@ const App = () => {
 
   const onLeaveFeedback = event => {
     const feedback = event.target.value;
-    switch (feedback) {
-      case 'good':
-        setGood(prevGood => prevGood + 1);
-        break;
-      case 'neutral':
-        setNeutral(prevNeutral => prevNeutral + 1);
-        break;
-      case 'bad':
-        setBad(prevBad => prevBad + 1);
-        break;
-      default:
-        break;
-    }
+    if (feedback === 'good') setGood(prevGood => prevGood + 1);
+    if (feedback === 'neutral') setNeutral(prevNeutral => prevNeutral + 1);
+    if (feedback === 'bad') setBad(prevBad => prevBad + 1);
   };
 
   return (
